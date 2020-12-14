@@ -1,0 +1,48 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.madre{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+    text-align: center;
+}
+.section{
+    border: 1px solid black;
+    height: 75vh;
+    display: flex;
+}
+.articles{
+    border: 1px solid black;
+    flex: 2 1 auto;
+    display: flex;
+    background-color: #ccc;
+    flex-flow: row wrap;
+}
+.article{
+    background-color: white;
+    border: 1px solid black;
+    flex: 1 1 auto;
+}
+.main {
+    flex-grow: 2;
+}
+.article, .aside, .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside{
+    width: 30%;
+    border: 1px solid black;
+}
+footer{
+    background-color: #ccc;
+    height: 10vh;
+    border: 1px solid black;
+}
